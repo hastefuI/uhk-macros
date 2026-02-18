@@ -1,0 +1,23 @@
+// lock-screen.uhkm
+// @uhkm-name: Lock Screen (macOS)
+// @uhkm-description: Lock macOS + UHK, or wake UHK if already locked.
+// @uhkm-version: 1.0.0
+// @uhkm-author: hasteful
+
+// if already locked, wake the keyboard
+if ($isLocked == 1) {
+    setVar isLocked 0
+    powerMode wake
+    setLedTxt 2500 "RDY"
+    exit
+}
+
+// trigger macOS lock (Ctrl+Cmd+Q)
+tapKey CG-q
+
+// give the host a moment to process before the keyboard stops sending
+delayUntil 250
+
+// lock the keyboard; requires S+F+J+L or this macro again to wake
+powerMode lock
+setVar isLocked 1
