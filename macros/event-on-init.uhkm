@@ -1,0 +1,15 @@
+// event-on-init.uhkm
+// @uhkm-name: $onInit
+// @uhkm-description: UHK $onInit event macro that runs at power-on to initialize the keyboard
+// @uhkm-version: 1.0.0
+// @uhkm-author: hasteful
+// @uhkm-license: MIT
+
+setLedTxt 0 "HST"
+
+set leds.fadeTimeout 60
+
+set backlight.strategy off
+
+set bluetooth.enabled 0
+set bluetooth.alwaysAdvertiseHid 0
