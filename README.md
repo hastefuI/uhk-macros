@@ -5,6 +5,7 @@ A collection of portable [Ultimate Hacking Keyboard](https://www.ultimatehacking
 ## Macros
 | Macro | Description | Source |
 | --- | --- | --- |
+| Launch 1Password | Opens 1Password on macOS via Spotlight. | [macros/launch-1password.uhkm](macros/launch-1password.uhkm) |
 | Lock Screen | Lock macOS + UHK, or wake UHK if already locked. | [macros/lock-screen.uhkm](macros/lock-screen.uhkm) |
 
 ## Installation
