@@ -1,0 +1,19 @@
+// dark-mode.uhkm
+// @uhkm-name: Dark Mode
+// @uhkm-description: Dark Mode toggle to quickly enable/disable LEDs and backlight
+// @uhkm-version: 1.0.0
+// @uhkm-author: hasteful
+// @uhkm-license: MIT
+
+setLedTxt 2500 "DRK"
+
+if ($isDarkMode == 1) {
+    setVar isDarkMode 0
+    set leds.enabled 1
+    set backlight.strategy functional
+    exit
+}
+
+setVar isDarkMode 1
+set backlight.strategy off
+set leds.enabled 0
