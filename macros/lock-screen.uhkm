@@ -1,8 +1,9 @@
 // lock-screen.uhkm
 // @uhkm-name: Lock Screen (macOS)
 // @uhkm-description: Lock macOS + UHK, or wake UHK if already locked.
-// @uhkm-version: 1.0.0
+// @uhkm-version: 1.0.1
 // @uhkm-author: hasteful
+// @uhkm-license: MIT
 
 // if already locked, wake the keyboard
 if ($isLocked == 1) {
