@@ -1,0 +1,11 @@
+// click-repeat.uhkm
+// @uhkm-name: Click Repeat
+// @uhkm-description: Repeats the same left button mouse click 3 times
+// @uhkm-version: 1.0.0
+// @uhkm-author: hasteful
+// @uhkm-license: MIT
+
+setVar count 3
+tapKey mouseBtnLeft
+delayUntil 15
+repeatFor count ($currentAddress - 2)
