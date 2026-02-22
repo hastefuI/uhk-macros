@@ -1,0 +1,16 @@
+// copy-paste-repeat.uhkm
+// @uhkm-name: Copy Paste Repeat
+// @uhkm-description: Select all text, copy to clipboard, and paste it 4 times
+// @uhkm-os: macos
+// @uhkm-version: 1.0.0
+// @uhkm-author: hasteful
+// @uhkm-license: MIT
+
+tapKey LG-a
+tapKey LG-c
+delayUntil 25
+
+setVar count 4
+tapKey LG-v
+delayUntil 25
+repeatFor count ($currentAddress - 2)
