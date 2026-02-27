@@ -1,6 +1,7 @@
 // lock-screen.uhkm
-// @uhkm-name: Lock Screen (macOS)
+// @uhkm-name: Lock Screen
 // @uhkm-description: Lock macOS + UHK, or wake UHK if already locked.
+// @uhkm-os: macos
 // @uhkm-version: 1.0.1
 // @uhkm-author: hasteful
 // @uhkm-license: MIT
