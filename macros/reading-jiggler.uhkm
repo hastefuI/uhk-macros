@@ -1,0 +1,69 @@
+// reading-jiggler.uhkm
+// @uhkm-name: Reading Jiggler
+// @uhkm-description: Simulates reading behavior on macOS with eased scrolling and random pauses.
+// @uhkm-os: macos
+// @uhkm-version: 1.0.0
+// @uhkm-author: hasteful
+// @uhkm-license: MIT
+
+// toggle: press once to start, press again to stop
+if ($isReadingJigglerEnabled == 1) {
+    setVar isReadingJigglerEnabled 0
+    stopMouse scroll up
+    setLedTxt 1000 "OFF"
+    exit
+}
+
+setVar isReadingJigglerEnabled 1
+setLedTxt 0 "SCR"
+setVar readingJigglerLoopCount 0
+
+while ($isReadingJigglerEnabled == 1) {
+    // eased reading burst: slow start -> faster middle -> slow stop
+    setVar pulse1 25
+    setVar pulse2 60
+    setVar pulse3 95
+    setVar pulse4 60
+    setVar pulse5 25
+    setVar gap (((($currentTime / 19) % 131) + 120)) // 120-250 ms
+
+    startMouse scroll up
+    delayUntil $pulse1
+    stopMouse scroll up
+    delayUntil $gap
+
+    startMouse scroll up
+    delayUntil $pulse2
+    stopMouse scroll up
+    delayUntil $gap
+
+    startMouse scroll up
+    delayUntil $pulse3
+    stopMouse scroll up
+    delayUntil $gap
+
+    startMouse scroll up
+    delayUntil $pulse4
+    stopMouse scroll up
+    delayUntil $gap
+
+    startMouse scroll up
+    delayUntil $pulse5
+    stopMouse scroll up
+
+    // pseudo-random dwell time: 5000-15000 ms
+    setVar dwell (((($currentTime / 7) % 10001) + 5000))
+    delayUntil $dwell
+
+    // simulate occasional extended reading pauses
+    setVar readingJigglerLoopCount (($readingJigglerLoopCount + 1) % 2)
+    if ($readingJigglerLoopCount == 0) {
+        setVar shouldWait (($currentTime / 23) % 2)
+        if ($shouldWait == 1) {
+            setVar extraDelay (((($currentTime / 29) % 15001) + 15000)) // 15000-30000 ms
+            setLedTxt 0 "ZZZ"
+            delayUntil $extraDelay
+            setLedTxt 0 "SCR"
+        }
+    }
+}
