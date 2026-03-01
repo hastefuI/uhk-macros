@@ -1,8 +1,21 @@
 # uhk-macros
 
+```
+                ,....    x x x    ....,
+      .... [ HST ] ... x       x ................
+  ......................... .........................
+  :........................ ........................:
+  :........................ ........................:
+  :........................ ........................:
+  :........................ ........................:
+  :........................ ........................:
+  ................... ..... ..... ...................
+```
+
 A collection of portable [Ultimate Hacking Keyboard](https://www.ultimatehackingkeyboard.com/) Macros built on the [UHKM specification](https://github.com/hastefuI/uhkm-spec) by hasteful 🐇
 
 ## Macros
+
 | Macro | Description | Source |
 | --- | --- | --- |
 | $onInit | Event macro that runs at power-on to initialize the keyboard. | [macros/event-on-init.uhkm](macros/event-on-init.uhkm) |
@@ -14,6 +27,7 @@ A collection of portable [Ultimate Hacking Keyboard](https://www.ultimatehacking
 | Reading Jiggler | Simulates reading behavior on macOS with eased scrolling and random pauses. | [macros/reading-jiggler.uhkm](macros/reading-jiggler.uhkm) |
 
 ## Installation
+
 1) Install [UHK Agent](https://ultimatehackingkeyboard.com/agent) and connect your keyboard.
 2) In Agent, open the Macros tab and import the desired macro from the uhkm file in this repo.
 3) Assign each macro to a key, layer, or keymap slot as needed.
