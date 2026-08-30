@@ -1,4 +1,4 @@
-# uhk-macros
+# uhk-macros [![UHKM Spec](https://img.shields.io/badge/UHKM%20Spec-v1%20Draft-orange)](https://github.com/hastefuI/uhkm-spec) [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg?logo=conventionalcommits&logoColor=white)](https://conventionalcommits.org) [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/hastefuI/uhk-macros/blob/main/LICENSE)
 
 ```
                 ,....    x x x    ....,
