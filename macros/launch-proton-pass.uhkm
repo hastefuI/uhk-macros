@@ -1,0 +1,15 @@
+// launch-proton-pass.uhkm
+// @uhkm-name: Launch Proton Pass
+// @uhkm-description: Opens Proton Pass on macOS via Spotlight.
+// @uhkm-os: macos
+// @uhkm-version: 1.0.0
+// @uhkm-author: hasteful
+// @uhkm-license: MIT
+
+setLedTxt 2500 "PPS"
+
+tapKey LG-space
+delayUntil 50
+write "Proton Pass"
+delayUntil 250
+tapKey enter

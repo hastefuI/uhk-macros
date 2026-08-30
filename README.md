@@ -22,6 +22,7 @@ A collection of portable [Ultimate Hacking Keyboard](https://www.ultimatehacking
 | Click Repeat | Repeats the same left button mouse click 3 times. | [macros/click-repeat.uhkm](macros/click-repeat.uhkm) |
 | Dark Mode | Toggles keyboard lighting and LEDs off/on. | [macros/dark-mode.uhkm](macros/dark-mode.uhkm) |
 | Launch 1Password | Opens 1Password on macOS via Spotlight. | [macros/launch-1password.uhkm](macros/launch-1password.uhkm) |
+| Launch Proton Pass | Opens [Proton Pass](https://proton.me/pass) on macOS via Spotlight. | [macros/launch-proton-pass.uhkm](macros/launch-proton-pass.uhkm) |
 | Copy Paste Repeat | Select all text, copy to clipboard, and paste it 4 times. | [macros/copy-paste-repeat.uhkm](macros/copy-paste-repeat.uhkm) |
 | Lock Screen | Lock macOS + UHK, or wake UHK if already locked. | [macros/lock-screen.uhkm](macros/lock-screen.uhkm) |
 | Reading Jiggler | Simulates reading behavior on macOS with eased scrolling and random pauses. | [macros/reading-jiggler.uhkm](macros/reading-jiggler.uhkm) |
